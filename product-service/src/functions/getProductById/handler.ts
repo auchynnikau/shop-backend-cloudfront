@@ -1,7 +1,7 @@
 import { APIGatewayProxyHandler } from "aws-lambda";
 import { formatJSONResponse } from "@libs/api-gateway";
 import { middyfy } from "@libs/lambda";
-import { Product } from "../../types";
+import { Product } from "../../types/product";
 import { loadProductById } from "../../utils";
 
 const getProductById: APIGatewayProxyHandler = async (event: any) => {

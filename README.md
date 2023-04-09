@@ -1,21 +1,18 @@
 # shop-backend-cloudfront
 
-# Links to Product Service API
+# Links
 
 https://zvlq7990u2.execute-api.us-east-1.amazonaws.com/dev/products
 https://zvlq7990u2.execute-api.us-east-1.amazonaws.com/dev/products/1
 
-# FE PR link
+Web app:
+https://dhlqlveabq58d.cloudfront.net/
 
-https://github.com/anastasiya-antonenko/shop-angular-cloudfront/pull/2
-
-# Swagger
-
+Swagger
 https://gibwy3srkb.execute-api.us-east-1.amazonaws.com/swagger
 
-# Deploy
-
-https://d1gjzqq39e70nl.cloudfront.net/
+FE part:
+auchynnikau/shop-react-redux-cloudfront#2
 
 # Evaluation criteria :
 

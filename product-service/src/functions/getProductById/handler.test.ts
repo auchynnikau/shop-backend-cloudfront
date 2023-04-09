@@ -2,7 +2,7 @@ import { loadProductById } from "../../utils";
 
 const mockProduct = {
   id: "1",
-  name: "Product 1",
+  title: "Product 1",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   price: 9.99,
   imageUrl: "https://example.com/images/product1.jpg",

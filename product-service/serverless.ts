@@ -37,7 +37,7 @@ const serverlessConfiguration: AWS = {
       concurrency: 10,
     },
     autoswagger: {
-      host: "http://some-host",
+      host: "zvlq7990u2.execute-api.us-east-1.amazonaws.com/dev/",
       excludeStages: ["production"],
     },
   },
