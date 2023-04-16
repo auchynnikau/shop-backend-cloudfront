@@ -4,20 +4,25 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dynamodb:upload-mocks": "aws configure set region us-east-1 && aws dynamodb batch-write-item --request-items file://src/mocks/products.mock.json",
+    "deploy": "serverless deploy && npm run dynamodb:upload-mocks"
   },
   "engines": {
     "node": ">=14.15.0"
   },
   "dependencies": {
     "@middy/core": "^3.4.0",
-    "@middy/http-json-body-parser": "^3.4.0"
+    "@middy/http-json-body-parser": "^3.4.0",
+    "aws-sdk": "^2.1359.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "@serverless/typescript": "^3.0.0",
     "@types/aws-lambda": "^8.10.71",
+    "@types/aws-sdk": "^2.7.0",
     "@types/jest": "^29.5.0",
     "@types/node": "^14.14.25",
     "babel-jest": "^29.5.0",
@@ -26,6 +31,8 @@
     "json-schema-to-ts": "^1.5.0",
     "serverless": "^3.0.0",
     "serverless-auto-swagger": "^2.12.0",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^12.0.4",
     "serverless-esbuild": "^1.23.3",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.4.0",
