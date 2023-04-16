@@ -1,0 +1,42 @@
+{
+  "Products": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "123" },
+          "title": { "S": "Title 1" },
+          "description": { "S": "Some description" },
+          "price": { "N": "500" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "1234" },
+          "title": { "S": "Title 2" },
+          "description": { "S": "Some description" },
+          "price": { "N": "100" }
+        }
+      }
+    }
+  ],
+  "Stocks": [
+    {
+      "PutRequest": {
+        "Item": {
+          "product_id": { "S": "123" },
+          "count": { "N": "5" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "product_id": { "S": "1234" },
+          "count": { "N": "10" }
+        }
+      }
+    }
+  ]
+}
